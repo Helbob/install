@@ -1,5 +1,5 @@
-function MyButton() {
-  return <button>Click me</button>;
+function MyButton(props) {
+  return <button>{props.children}</button>;
 }
 
 export default MyButton;

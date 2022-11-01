@@ -18,7 +18,7 @@ function MyHeader() {
             <a href="#">Testimonials</a>
           </li>
         </ul>
-        <MyButton />
+        <MyButton>Hi</MyButton>
       </nav>
     </header>
   );
