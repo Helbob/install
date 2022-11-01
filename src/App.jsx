@@ -6,8 +6,8 @@ import Section from "./conponments/Section";
 import MyButton from "./conponments/MyButton";
 import MyHeader from "./conponments/MyHeader";
 import MyFooter from "./conponments/MyFooter";
-import ListSweetList from "./conponments/ListSweetList";
-
+//import ListSweetList from "./conponments/ListSweetList";
+import ImageList from "./conponments/ImageList";
 function App() {
   const user = "Mille";
 
@@ -15,14 +15,12 @@ function App() {
     <>
       <MyHeader> </MyHeader>
       <main>
-        <ListSweetList></ListSweetList>
         <Section
           user={user}
           content=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
         necessitatibus."
           title="Blockchain finally made accessible"
           keywords={[]}
-          img={reactLogo}
         />
         <Section
           user={user}
@@ -30,7 +28,6 @@ function App() {
         necessitatibus."
           title="Blockchain finally made accessible"
           keywords={[]}
-          img={picture}
         />
       </main>
       <MyFooter />

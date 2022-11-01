@@ -1,5 +1,6 @@
 import MyButton from "./MyButton";
 import Wrapper from "./Wrapper";
+import ImageList from "./ImageList";
 function Section(props) {
   console.log(props);
   // const keywords = props.keywords.length ? props.keywords : [];
@@ -11,6 +12,7 @@ function Section(props) {
         <ul>{props.keywords}</ul>
         <p>{props.content}</p>
         <img src={props.img} alt="" />
+        <ImageList></ImageList>
         <MyButton>Haj</MyButton>
       </section>
     </Wrapper>

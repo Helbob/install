@@ -1,11 +1,21 @@
-import React from "react";
+import { useState } from "react";
 
 function ListsSweetLists() {
-  const data = ["IPA", "Stout", "APA", "NEIPA"];
+  const [beerList, setBeerList] = useState(["IPA", "Stout", "APA", "NEIPA"]);
 
-  const beerList = data.map((item) => <Beer category={item} />);
-
-  return <ol>{beerList}</ol>;
+  function addOne() {
+    setBeerList(beerList.concat("Russian Stout"));
+  }
+  return (
+    <>
+      <ol>
+        {beerList.map((item) => (
+          <Beer category={item} />
+        ))}
+      </ol>
+      <button onClick={addOne}>Add one</button>
+    </>
+  );
 }
 
 function Beer(props) {
